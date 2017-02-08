@@ -11,25 +11,43 @@ variables which can then be used in the wrapper.sh.
 
 The environment variables exposed in case of Health Rule Violation Events are 
 
-APP_NAME
-APP_ID
-PVN_ALERT_TIME
-PRIORITY
-SEVERITY 
-TAG
-HEALTH_RULE_NAME
-HEALTH_RULE_ID
-PVN_TIME_PERIOD_IN_MINUTES
-AFFECTED_ENTITY_TYPE
-AFFECTED_ENTITY_NAME
-AFFECTED_ENTITY_ID
-SUMMARY_MESSAGE
-INCIDENT_ID
-DEEP_LINK_URL
-ACCOUNT_NAME
-ACCOUNT_ID 
-EVENT_DETAIL => A JSON payload for a detailed view of the event.
-IS_HRV => A flag to differentiate between health rule violation(hrv) and non-hrv events. For HRV this flag = 1
+APP_NAME  
+APP_ID  
+PVN_ALERT_TIME  
+PRIORITY  
+SEVERITY  
+TAG  
+HEALTH_RULE_NAME  
+HEALTH_RULE_ID  
+PVN_TIME_PERIOD_IN_MINUTES  
+AFFECTED_ENTITY_TYPE  
+AFFECTED_ENTITY_NAME  
+AFFECTED_ENTITY_ID  
+SUMMARY_MESSAGE  
+INCIDENT_ID  
+DEEP_LINK_URL  
+ACCOUNT_NAME  
+ACCOUNT_ID  
+EVENT_DETAIL => A JSON payload for a detailed view of the event.  
+IS_HRV => A flag to differentiate between health rule violation(hrv) and non-hrv events. For HRV this flag = 1  
+
+For Non Health Rule Violation Event the following variables are exposed ::
+
+APP_NAME  
+APP_ID  
+EN_TIME  
+PRIORITY  
+SEVERITY  
+TAG  
+EN_NAME  
+EN_ID  
+EN_INTERVAL_IN_MINUTES  
+DEEP_LINK_URL  
+ACCOUNT_NAME  
+ACCOUNT_ID  
+EVENT_DETAIL => A JSON payload for a detailed view of the event.  
+IS_HRV => A flag to differentiate between health rule violation(hrv) and non-hrv events. For non-HRV this flag = 0
+
 
 For more information on what the above field means please check [this](https://docs.appdynamics.com/display/PRO42/Build+a+Custom+Action) doc
 
